@@ -1,5 +1,7 @@
 body {
-    font-family: "Montserrat";
+    
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: bolder;
     text-align: center;
 }
 
@@ -15,13 +17,15 @@ body {
 }
 
 .navbar-brand {
-    font-family: "Ubuntu";
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .nav-item {
+    font-family: 'Alumni Sans', sans-serif;
     padding: 0 18px;
+    letter-spacing: 2px;
 }
 
 .nav-link {
