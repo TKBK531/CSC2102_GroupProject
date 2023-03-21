@@ -35,7 +35,6 @@ body {
 
 
 /* Section Styles */
-
 .section-1{
     height: 50rem;
     background-color: aqua;
@@ -44,4 +43,18 @@ body {
 .section-2{
     height: 50rem;
     background-color: yellowgreen;
+}
+
+/* Title Section */
+.title-heading{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 8rem;
+}
+
+.title-slice{
+    padding: 0 2rem;
+}
+
+.logo-png{
+    size: 5rem;
 }
