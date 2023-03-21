@@ -3,6 +3,7 @@ body {
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-weight: bolder;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 
@@ -32,3 +33,15 @@ body {
     font-size: 1.2rem;
 }
 
+
+/* Section Styles */
+
+.section-1{
+    height: 50rem;
+    background-color: aqua;
+}
+
+.section-2{
+    height: 50rem;
+    background-color: yellowgreen;
+}
