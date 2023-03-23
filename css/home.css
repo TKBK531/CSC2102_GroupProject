@@ -34,7 +34,7 @@ body {
 }
 
 
-/* Section Styles */
+/*Section Styles */
 .section-1{
     height: 50rem;
     background-color: aqua;
@@ -64,7 +64,21 @@ body {
 
 
 /* Events Style */
+.events-title{
+    font-size: 5rem;
+}
 
 .event-card{
     margin: .5rem;
 }
+
+.card {
+    transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
