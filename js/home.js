@@ -1,17 +1,19 @@
-$(document).ready(function() {
-    // Show or hide the button based on the user's scroll position
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('#myBtn').fadeIn();
-      } else {
-        $('#myBtn').fadeOut();
+$('.counter').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+    
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },
+  
+    {
+      duration: 2000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
       }
     });
-  
-    // When the button is clicked, scroll to the top of the page
-    $('#myBtn').click(function() {
-      $('html, body').animate({ scrollTop: 0 }, 600);
-      return false;
-    });
   });
-  
