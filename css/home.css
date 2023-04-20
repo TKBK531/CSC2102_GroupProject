@@ -1,16 +1,81 @@
 body {
-    
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bolder;
     text-align: center;
     letter-spacing: 1px;
+    background-color: #F5F5F5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
 
+nav {
+    background-color: #003366;
+    color: white;
+}
+
+.myBtn{
+    margin: 20px;
+    background-color: #003366;
+    color: black;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 3rem;
+}
+
+.myBtn:hover{
+    background-color: #003366;
+    color: white;
+    transition: background-color 0.3s ease-out;
+}
+
+.heading {
+    margin: 0 auto 0 auto;
+}
+
+.main-heading{
+    color: #003366;
+    font-size: 5rem;
+    margin: 5rem;
+}
+
+.section-title {
+    color: #FFD700;
+    font-size: 5rem;
+}
+
+.main-img{
+    width: 50rem;
+    margin: 30px
+}
+.rotating-section {
+    position: relative;
+    height: 300px;
+  }
+  
+  .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .item.active {
+    opacity: 1;
+  }
+  
 
 /* Navigation Bar */
-.navbar {
-    padding: 0 1rem 4.5rem;
+/* .navbar {
+    padding: 0 0.5rem 0.1rem;
+    background-color:  #015958;
 }
 
 .navbar-nav {
@@ -27,35 +92,91 @@ body {
     font-family: 'Alumni Sans', sans-serif;
     padding: 0 18px;
     letter-spacing: 2px;
+    transition: all 0.3s ease-out;
 }
 
 .nav-link {
     font-size: 1.2rem;
 }
 
+.nav-item :hover{
+    text-decoration: underline;
+    transition-delay: 0.5s;
+} */
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+.navbar-brand:hover {
+    color: #ffd700;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-out;
+}
+
+.main-div{
+    border-radius: 20px;
+}
+
+
+.main-div:hover {
+    border-color: #3193d2;
+    transition: all ease 0.2s;
+  }
+  
+
+/* Define the hover state for the navigation links */
+.nav-link:hover {
+    border-radius: 10px;
+    background-color: #ffd700;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
 
 /*Section Styles */
-.section-1{
+/* .section-1 {
     height: 50rem;
-    background-color: aqua;
+    background-color: #0fc2c0;
 }
 
-.section-2{
+.section-2 {
     height: 50rem;
     background-color: yellowgreen;
-}
+} */
 
 /* Title Section */
-.title-heading{
-    font-family: 'Alumni Sans', sans-serif;
+.title-heading {
+    font-family: "Alumni Sans", sans-serif;
     font-size: 8rem;
 }
 
-.title-slice{
+.title-slice {
     padding: 0 2rem;
 }
 
-.logo-png{
+.logo-png {
     size: 5rem;
 }
 
@@ -68,7 +189,7 @@ body {
 }
 
 /* About Styles */
-.count{
+.count {
     margin: 0.5rem;
     height: 10rem;
     width: auto;
@@ -83,44 +204,38 @@ body {
     padding: 10px;
     border-radius: 5px;
     background-color: #f7f7f7;
-  }
+}
 
 /* Carousel Styles */
 
-
 /* Events Style */
-.section-title{
-    font-size: 5rem;
-}
 
-.event-card{
-    margin: .5rem;
+.event-card {
+    margin: 0.5rem;
 }
 
 .card {
     transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  
+}
 
-  /* Footer Section */
-  .footer-section{
+/* Footer Section */
+.footer-section {
     color: white;
-  }
+}
 
-  /* Details Form */
-  .details-form{
+/* Details Form */
+#contact-form {
+    font-family: "Montserrat", sans-serif;
     color: black;
-    font-weight: bolder;
-    font-size: large;
-  }
+}
 
-  .form-item{
+.form-item {
     margin: 2rem;
     size: 3rem;
-  }
-  
+    color: black;
+}
