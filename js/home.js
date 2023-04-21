@@ -16,9 +16,8 @@ $(document).ready(function () {
         }
     });
 
-    // Carousel
 
-    // **********************************************
+    
 
     // Set the first item to active
     $('.item:first').addClass('active');

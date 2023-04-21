@@ -59,6 +59,11 @@
     padding: 10rem;
 }
 
+.about-us{
+    text-align: justify;
+    margin-left: 20px;
+}
+
 .about-icon {
     font-size: 10rem;
 }

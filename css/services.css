@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+
+hr {
+    width: 15%;
+    position: relative;
+    border: none;
+    height: 5px;
+    background: #003366;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    text-align: left;
+}
+
+.col{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+.col:hover{
+    color: #003366;
+    border: 2px solid #003366;
+
+}
+
+.book-icon{
+    color: white;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fas{
+    font-size: 40px;
+    color: #003366;
+}
+
+* {
+    box-sizing: border-box;
+}
+
