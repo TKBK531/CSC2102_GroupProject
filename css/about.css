@@ -1,0 +1,50 @@
+.d5{
+    line-height: 1cm;
+}
+
+.about-purpose{
+    padding: 1.9rem;
+}
+
+.text-center{
+    padding: 1.45rem;
+}
+
+.mygrid{
+    height: 100px;
+}
+
+.bx{
+    background-color: aqua;
+    margin: 10px;
+    height: 41vh;
+    border-radius: 10px;
+
+}
+
+.bx1{
+    
+
+background-image: url("https://www.mlive.com/resizer/U6L17LXPndnCG_OeeQaWh3sIrFI=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.mlive.com/home/mlive-media/width2048/img/grand-haven/photo/ghaps-book-donations-photo2jpg-b642d64a2a09b1a4.jpg"); 
+background-size: cover;
+background-repeat: no-repeat;
+background-position: -70px;
+}
+
+.bx2{
+    
+    
+background-image: url("https://th.bing.com/th/id/R.0d2b4c55fe0693593c5e3a48946fab10?rik=ieIU0pr6AJ8k5A&pid=ImgRaw&r=0");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: -70px;
+}
+
+.bx3{
+    
+    
+    background-image: url("https://thumbs.dreamstime.com/b/relaxed-students-signing-their-friend-playing-guitar-going-out-singing-together-group-best-university-friends-sitting-121651238.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -70px;
+    }
