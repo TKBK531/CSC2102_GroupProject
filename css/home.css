@@ -1,5 +1,5 @@
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: bolder;
     text-align: center;
     letter-spacing: 1px;
@@ -12,7 +12,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Open Sans", sans-serif;
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
 }
 
 nav {
@@ -106,6 +111,7 @@ nav {
     padding: 1rem;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 1rem;
 }
 
 .service-item:hover{
