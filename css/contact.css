@@ -1,0 +1,12 @@
+/* Details Form */
+#contact-form {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    margin: 2rem;
+}
+
+.form-item {
+    margin: 2rem;
+    size: 3rem;
+    color: black;
+}

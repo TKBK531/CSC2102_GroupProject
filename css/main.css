@@ -1,0 +1,92 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #F5F5F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Montserrat", sans-serif;
+}
+
+p,
+ul {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    background-color: #003366;
+    color: white;
+}
+
+.heading {
+    margin: 0 auto 0 auto;
+}
+
+.main-heading {
+    color: #003366;
+    font-size: 5rem;
+    margin: 5rem;
+}
+
+.section-title {
+    color: #FFD700;
+    padding-bottom: 2rem;
+}
+
+.section-para {
+    padding: 2rem;
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+.navbar-brand:hover {
+    color: #ffd700;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-out;
+}
+
+.nav-link:hover {
+    border-radius: 10px;
+    background-color: #ffd700;
+}
+
+/* Footer Section */
+.footer-section {
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
