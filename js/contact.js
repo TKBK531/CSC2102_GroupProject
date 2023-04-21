@@ -8,35 +8,40 @@ $(document).ready(function () {
             $("#registration-number").hide();
         }
     });
+});
 
-    $('#contact-form').submit(function (event) {
-        var name = $('#fullName').val();
-        var email = $('#email').val();
-        var status = $('#status').val();
-        var regNum = $('#regNum').val();
+const form = document.getElementById('contact-form');
+const fullName = document.getElementById('full-name');
+const email = document.getElementById('email');
+const faculty = document.getElementById('faculty');
+const status = document.getElementById('status');
+const regNumber = document.getElementById('reg-number');
 
-        if (name === "" || email === "" || status === "") {
-            alert("Please fill in all required fields.");
-            event.preventDefault();
-        }
+form.addEventListener('submit', (event) => {
 
-        if (status === "Student" && regNum === "") {
-            alert("Please enter your registration number.");
-            event.preventDefault();
-        }
-    });
+    event.preventDefault();
 
-    $("#message").on("input", function () {
-        var maxLength = 500;
-        var currentLength = $(this).val().length;
-        var remainingLength = maxLength - currentLength;
-        $("#letter-count").text(remainingLength + " characters remaining");
+    if (!fullName.value.trim()) {
+        fullName.style.outline = '2px solid red';
+    } else {
+        fullName.style.outline = 'none';
+    }
 
-        if (currentLength >= maxLength) {
-            $(this).val($(this).val().substr(0, maxLength));
-            $(this).attr("disabled", true);
+    if (!email.value.trim()) {
+        email.style.outline = '2px solid red';
+    } else {
+        email.style.outline = 'none';
+    }
+
+    if (status.value === 'student' || status.value === 'lecturer') {
+        if (!regNumber.value.trim()) {
+            regNumber.style.outline = '2px solid red';
         } else {
-            $(this).attr("disabled", false);
+            regNumber.style.outline = 'none';
         }
-    });
+    }
+
+    if (fullName.value.trim() && email.value.trim() && faculty.value && status.value && ((status.value === 'student' || status.value === 'lecturer') ? regNumber.value.trim() : true)) {
+        form.submit();
+    }
 });
