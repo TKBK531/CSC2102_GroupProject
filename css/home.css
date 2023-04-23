@@ -5,7 +5,7 @@
 }
 
 .main-img {
-    width: 50rem;
+    width: 40rem;
     margin: 30px
 }
 
@@ -14,9 +14,31 @@
     height: 300px;
 }
 
+.section-2{
+    background-color: #dbd7d79e;
+    padding-bottom: 50px;
+}
+
+.card-img {
+    float: center;
+    height: 300px;
+    object-fit: contain;
+    padding: 25px;
+}
+
+.pub-title,
+.pub-text{
+    text-decoration: none;
+    color: black;
+}
+
 /* Carousel Styles */
 .carousel-caption{
     padding-top: 100px;
+}
+
+.d-block{
+    border-radius: 10px;
 }
 /* Alumni Section */
 #alumni .carousel-item {
@@ -52,6 +74,8 @@
   }
   
   
+
+
 /* ************************************************************ */
 
 /* About Section */
@@ -114,6 +138,14 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner{
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 25px;
+    border: 2px solid #003366;
+    border-radius: 10px;
 }
 
 /* 

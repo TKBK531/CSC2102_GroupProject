@@ -39,12 +39,12 @@ function popImg(link) {
   closeBtn.innerHTML = "&times;";
   closeBtn.className = "close-btn";
   closeBtn.style.position = "relative";
-  closeBtn.style.top = "-630px";
-  closeBtn.style.right = "-800px";
+  closeBtn.style.top = "-80vh";
+  closeBtn.style.right = "-50vh";
   closeBtn.style.fontSize = "20px";
   closeBtn.style.fontWeight = "bold";
   closeBtn.style.color = "#000";
-  closeBtn.style.backgroundColor = "#fff";
+  closeBtn.style.backgroundColor = "transparent";
   closeBtn.style.border = "none";
   closeBtn.style.borderRadius = "50%";
   closeBtn.style.padding = "10px";

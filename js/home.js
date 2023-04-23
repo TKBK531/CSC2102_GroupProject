@@ -19,23 +19,21 @@ $(document).ready(function () {
 
     
 
-    // Set the first item to active
     $('.item:first').addClass('active');
 
-    // Set the interval to rotate every 5 seconds
+
     setInterval(function () {
-        // Get the active item
+
         var active = $('.item.active');
 
-        // Remove the active class from the current item
+
         active.removeClass('active');
 
-        // Check if this is the last item
         if (active.is(':last-child')) {
-            // Set the first item to active
+
             $('.item:first').addClass('active');
         } else {
-            // Set the next item to active
+
             active.next().addClass('active');
         }
     }, 5000);

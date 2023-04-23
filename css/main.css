@@ -34,7 +34,7 @@ nav {
 .main-heading {
     color: #003366;
     font-size: 5rem;
-    margin: 5rem;
+    margin: 3rem;
 }
 
 .section-title {
@@ -79,18 +79,34 @@ nav {
     background-color: #ffd700;
 }
 
+.active-nav{
+    color: black;
+    background-color: #FFD700;
+}
+
 /* Footer Section */
 .footer-section {
     color: white;
 }
 
-.btn-outline-primary{
+.section-btn{
+    margin-top: 20px;
     height: 75px;
     width: 400px;
     font-size: 1.2rem;
 }
 
+.btn-outline-primary{
+    border-color: #003366;
+    color: #003366;
+}
+
 .btn-outline-primary:hover{
+    background-color: #003366;
+    border-color: #003366;
+}
+
+.section-btn:hover{
     background-color: #003366;
 }
 
