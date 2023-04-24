@@ -40,45 +40,109 @@
 
 <body>
 
-    <div class="container">
-        <h1>Add Notable Alumni</h1>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">AlumniPortal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-nav" href="alumni.html">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <form id="notable-alumni-form" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
-                <small class="form-text text-danger" id="name-error"></small>
+    <div class="row">
+
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-md-10 d-flex justify-content-center">
+
+            <div class="container join-form">
+                <h1 class="main-heading">Add Notable Alumni</h1>
+                <form id="alumni-form" class="container mt-3 needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        <div class="invalid-feedback" id="name-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="picture" class="form-label">Picture</label>
+                        <input type="file" class="form-control" id="picture" name="picture" required>
+                        <div class="invalid-feedback" id="picture-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="class_year" class="form-label">Class Year</label>
+                        <input type="text" class="form-control" id="year" name="class_year" required>
+                        <div class="invalid-feedback" id="year-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="alumni_code" class="form-label">Alumni Code</label>
+                        <input type="text" class="form-control" id="code" name="alumni_code" required>
+                        <div class="invalid-feedback" id="code-error"></div>
+                    </div>
+                    <button type="submit" id="submit-button" class="btn btn-outline-primary add-btn">Add</button>
+                </form>
+
+
+
             </div>
-            <div class="form-group">
-                <label for="picture">Picture:</label>
-                <input type="file" class="form-control-file" id="picture" name="picture" required>
-                <small class="form-text text-danger" id="picture-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="class_year">Class Year:</label>
-                <input type="text" class="form-control" id="class_year" name="class_year" placeholder="Enter class year"
-                    required>
-                <small class="form-text text-danger" id="class-year-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="achievements">Achievements:</label>
-                <textarea class="form-control" id="achievements" name="achievements" rows="5"
-                    placeholder="Enter achievements" required></textarea>
-                <small class="form-text text-danger" id="achievements-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="alumni_code">Alumni Code:</label>
-                <input type="text" class="form-control" id="alumni_code" name="alumni_code"
-                    placeholder="Enter alumni code" required>
-                <small class="form-text text-danger" id="alumni-code-error"></small>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
+        </div>
+        <div class="col-lg-1">
+
+        </div>
     </div>
 
+    <!-- footer -->
+    <footer class="bg-dark py-3 footer-section" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@alumniportal.com<br>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Connect With Us</h3>
+                    <ul class="list-unstyled">
+
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2023 AlumniPortal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
+    <script src="js/alumni.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/alumni.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

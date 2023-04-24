@@ -1,0 +1,39 @@
+div{
+    color: black;
+ 
+}
+
+hr{
+    width: 50%;
+    display: inline-block;
+    
+}
+
+
+
+
+
+/*main container*/
+.header-image{
+    width: 50%;
+    position: relative;
+    bottom: 50%;
+}
+
+/*Leastes NEWS & Events*/
+
+/*upcoming events*/
+.event-slides-img{
+    width: 600px;
+    height: 400px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/*donation*/
+
+.next-step-img{
+    width: 400px;
+    height: 400px;
+}

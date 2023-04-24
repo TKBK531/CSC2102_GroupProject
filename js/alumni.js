@@ -1,49 +1,71 @@
-function validateForm(event) {
-    var nameField = document.getElementById("name");
-    var pictureField = document.getElementById("picture");
-    var classYearField = document.getElementById("class_year");
-    var alumniCodeField = document.getElementById("alumni_code");
+const form = document.getElementById("alumni-form");
+const nameInput = document.getElementById("name");
+const pictureInput = document.getElementById("picture");
+const yearInput = document.getElementById("year");
+const codeInput = document.getElementById("code");
+const submitButton = document.getElementById("submit-button");
 
-    var nameError = document.getElementById("name-error");
-    var pictureError = document.getElementById("picture-error");
-    var classYearError = document.getElementById("class-year-error");
-    var alumniCodeError = document.getElementById("alumni-code-error");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-    if (nameField.value.trim() === "") {
-        nameField.classList.add("is-invalid");
-        nameError.innerHTML = "Name is required.";
-        event.preventDefault();
+    let hasError = false;
+
+    if (nameInput.value.trim() === "") {
+        nameInput.classList.add("is-invalid");
+        document.getElementById("name-error").innerHTML = "Please enter your name.";
+        hasError = true;
     } else {
-        nameField.classList.remove("is-invalid");
-        nameError.innerHTML = "";
+        nameInput.classList.remove("is-invalid");
+        document.getElementById("name-error").innerHTML = "";
     }
 
-    if (pictureField.value.trim() === "") {
-        pictureField.classList.add("is-invalid");
-        pictureError.innerHTML = "Picture is required.";
-        event.preventDefault();
+    if (pictureInput.value.trim() === "") {
+        pictureInput.classList.add("is-invalid");
+        document.getElementById("picture-error").innerHTML = "Please Upload your picture.";
+        hasError = true;
     } else {
-        pictureField.classList.remove("is-invalid");
-        pictureError.innerHTML = "";
+        pictureInput.classList.remove("is-invalid");
+        document.getElementById("picture-error").innerHTML = "";
     }
 
-    if (classYearField.value.trim() === "") {
-        classYearField.classList.add("is-invalid");
-        classYearError.innerHTML = "Class year is required.";
-        event.preventDefault();
-    } else {
-        classYearField.classList.remove("is-invalid");
-        classYearError.innerHTML = "";
+    if (yearInput.value.trim() === "") {
+        yearInput.classList.add("is-invalid");
+        document.getElementById("year-error").innerHTML = "Please enter your class year.";
+        hasError = true;
+    } else if (yearInput.value.trim() > 2023) {
+        yearInput.classList.add("is-invalid");
+        document.getElementById("year-error").innerHTML = "Invalid Class Year";
+        hasError = true;
+    }
+    else {
+        yearInput.classList.remove("is-invalid");
+        document.getElementById("year-error").innerHTML = "";
     }
 
-    if (alumniCodeField.value.trim() === "") {
-        alumniCodeField.classList.add("is-invalid");
-        alumniCodeError.innerHTML = "Alumni code is required.";
-        event.preventDefault();
+    if (codeInput.value.trim() === "") {
+        codeInput.classList.add("is-invalid");
+        document.getElementById("code-error").innerHTML = "Please enter your alumni code.";
+        hasError = true;
     } else {
-        alumniCodeField.classList.remove("is-invalid");
-        alumniCodeError.innerHTML = "";
+        codeInput.classList.remove("is-invalid");
+        document.getElementById("code-error").innerHTML = "";
     }
-}
 
-document.getElementById("notable-alumni-form").addEventListener("submit", validateForm);
+    if (!/^ALU\d{4}$/.test(codeInput.value.trim())) {
+        codeInput.classList.add("is-invalid");
+        document.getElementById("code-error").innerHTML = "Enter a Valid Alumni Code (ex: ALU2343)";
+        hasError = true;
+    } else {
+        codeInput.classList.remove("is-invalid");
+        document.getElementById("code-error").innerHTML = "";
+    }
+
+    if (!hasError) {
+        // form submission code
+        form.submit();
+
+        alert("Successfully added " + nameInput.value);
+
+        window.location.href = "alumni.html";
+    }
+});

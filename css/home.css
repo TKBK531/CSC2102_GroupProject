@@ -9,17 +9,22 @@
     margin: 30px
 }
 
-.rotating-section {
-    position: relative;
-    height: 300px;
-}
+/* Services Section */
 
-.section-2{
+/* Events Section */
+
+/* Publications Section */
+
+/* Footer Section */
+
+
+
+.section-2 {
     background-color: #dbd7d79e;
     padding-bottom: 50px;
 }
 
-.card-img {
+.publication-img {
     float: center;
     height: 300px;
     object-fit: contain;
@@ -27,63 +32,34 @@
 }
 
 .pub-title,
-.pub-text{
+.pub-text {
     text-decoration: none;
     color: black;
 }
 
-/* Carousel Styles */
-.carousel-caption{
-    padding-top: 100px;
+/* Alumni Section */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0%);
 }
 
-.d-block{
+#alumni-carousel .carousel-inner{
+    margin: 10px;
+    padding: 20px 0 20px 0;
+    border: 2px solid #003366;
     border-radius: 10px;
 }
-/* Alumni Section */
-#alumni .carousel-item {
-    height: 32rem;
-    background-size: cover;
-  }
-  
-  #alumni .carousel-item img {
-    height: 32rem;
-  }
-  
-  #alumni .carousel-caption {
-    bottom: 220px;
-  }
-  
-  #alumni .carousel-caption h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  
-  #alumni .carousel-caption p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  
-  #alumni .carousel-caption .btn-primary {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 10px 30px;
-    border-radius: 50px;
-  }
-  
-  
 
-
-/* ************************************************************ */
+.alum-img{
+    height: 30rem;
+}
 
 /* About Section */
 .about-us .about-ico {
     padding: 10rem;
 }
 
-.about-us{
+.about-us {
     text-align: justify;
     margin-left: 20px;
 }
@@ -126,9 +102,14 @@
     color: #003366;
 }
 
-/* Events Style */
+
+/* Events Section */
 .event-card {
     margin: 0.5rem;
+}
+
+.event-img {
+    height: 25rem;
 }
 
 .card {
@@ -138,14 +119,6 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.carousel-inner{
-    margin: 20px;
-    padding: 20px;
-    padding-bottom: 25px;
-    border: 2px solid #003366;
-    border-radius: 10px;
 }
 
 /* 

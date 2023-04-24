@@ -21,6 +21,18 @@ form.addEventListener('submit', (event) => {
 
     event.preventDefault();
 
+    let hasError = false;
+
+    // if (fullName.value.trim() === "") {
+    //     fullName.classList.add("is-invalid");
+    //     document.getElementById("name-error").innerHTML = "Please enter your name.";
+    //     hasError = true;
+    // } else {
+    //     fullName.classList.remove("is-invalid");
+    //     document.getElementById("name-error").innerHTML = "";
+    // }
+
+
     if (!fullName.value.trim()) {
         fullName.style.outline = '2px solid red';
     } else {

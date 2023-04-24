@@ -16,9 +16,9 @@
 
 .card-img-top {
     margin-top: 10px;
-    height: 18rem;
-    width: 16rem;
+    /* height: 20rem; */
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .alumni-name {
@@ -29,4 +29,16 @@
     margin: 10px;
     display: flex;
     justify-content: center;
+}
+
+.add-btn{
+    width: 10rem;
+}
+
+.join-form{
+    margin-top: 5rem;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 2rem;
 }

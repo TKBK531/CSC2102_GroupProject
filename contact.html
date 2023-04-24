@@ -42,6 +42,7 @@
 </head>
 
 <body>
+
     <div>
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-md">
@@ -81,7 +82,7 @@
 
         <h1 class="main-heading">Contact Form</h1>
         <div class="col-lg-6 side-1">
-
+            <img src="images/dog.png" class="contact-img" alt="">
         </div>
 
         <div class="col-lg-6 side-2">
@@ -90,6 +91,7 @@
                 <div class="mb-3">
                     <label for="full-name" class="form-label">Full Name</label>
                     <input type="text" class="form-control" id="full-name" placeholder="Enter your full name">
+                    <div class="invalid-feedback" id="name-error"></div>
                 </div>
 
                 <div class="row">
@@ -113,6 +115,7 @@
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <div class="invalid-feedback" id="email-error"></div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +124,7 @@
                     <label for="status" class="form-label">Status</label>
                     <select class="form-select" id="status" onchange="showRegistrationNumber()">
                         <option value="lecturer">Lecturer</option>
-                        <option value="student">Student</option>                        
+                        <option value="student">Student</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -130,6 +133,7 @@
                     <label for="reg-number" class="form-label">Registration Number</label>
                     <input type="text" class="form-control" id="reg-number"
                         placeholder="Enter your registration number">
+                    <div class="invalid-feedback" id="regNo-error"></div>
                 </div>
 
                 <div class="mb-3">
@@ -151,31 +155,29 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/contact.js"></script>
 
-        <!-- Footer -->
-        <footer class="bg-dark py-3 footer-section" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>
-                            <a href="contact.html" target="_blank">Contact Us</a>
-                        </h5>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-envelope"></i> Email: info@example.com</li>
-                            <li><i class="fas fa-phone"></i> Phone: +1-234-567-8901</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main St, Anytown USA</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h5>Follow Us</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                        </ul>
-                    </div>
-    
+    <!-- footer -->
+    <footer class="bg-dark py-3 footer-section" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@alumniportal.com<br>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Connect With Us</h3>
+                    <ul class="list-unstyled">
+
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <hr>
+            <p class="text-center">&copy; 2023 AlumniPortal. All rights reserved.</p>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
