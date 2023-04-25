@@ -61,7 +61,7 @@ form.addEventListener("submit", (event) => {
     }
 
     if (!hasError) {
-        // form submission code
+
         form.submit();
 
         alert("Successfully added " + nameInput.value);

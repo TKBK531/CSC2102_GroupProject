@@ -24,6 +24,11 @@
     padding-bottom: 50px;
 }
 
+
+.publication{
+    text-decoration: none;
+}
+
 .publication-img {
     float: center;
     height: 300px;
@@ -102,7 +107,6 @@
     color: #003366;
 }
 
-
 /* Events Section */
 .event-card {
     margin: 0.5rem;
@@ -120,16 +124,3 @@
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
-
-/* 
-.item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.item.active {
-    opacity: 1;
-} */

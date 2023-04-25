@@ -1,59 +1,86 @@
-$(document).ready(function () {
-    $("#registration-number").hide();
+// const message = document.querySelector('#message');
+const letterCount = document.querySelector('#letter-count');
+const maxLetters = 500;
+const form = document.getElementById("contact-form");
+const nameInput = document.getElementById("full-name");
+const emailInput = document.getElementById("email");
+const facultyInput = document.getElementById("faculty");
+const statusInput = document.getElementById("status");
+const regNoInput = document.getElementById("reg-number");
+const messageInput = document.getElementById("message");
+const submitButton = document.getElementById("submit-button");
 
-    $("#status").change(function () {
-        if ($(this).val() == "student") {
-            $("#registration-number").show();
-        } else {
-            $("#registration-number").hide();
-        }
-    });
+message.addEventListener('input', () => {
+    const remainingLetters = maxLetters - message.value.length;
+    letterCount.textContent = `${remainingLetters} characters remaining`;
 });
 
-const form = document.getElementById('contact-form');
-const fullName = document.getElementById('full-name');
-const email = document.getElementById('email');
-const faculty = document.getElementById('faculty');
-const status = document.getElementById('status');
-const regNumber = document.getElementById('reg-number');
+function showRegistrationNumber() {
+    const status = document.getElementById('status');
+    const regNumber = document.getElementById('registration-number');
 
-form.addEventListener('submit', (event) => {
+    if (status.value === 'student') {
+        regNumber.style.display = 'block';
+    } else {
+        regNumber.style.display = 'none';
+    }
+}
 
+form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     let hasError = false;
 
-    // if (fullName.value.trim() === "") {
-    //     fullName.classList.add("is-invalid");
-    //     document.getElementById("name-error").innerHTML = "Please enter your name.";
-    //     hasError = true;
-    // } else {
-    //     fullName.classList.remove("is-invalid");
-    //     document.getElementById("name-error").innerHTML = "";
-    // }
-
-
-    if (!fullName.value.trim()) {
-        fullName.style.outline = '2px solid red';
+    if (nameInput.value.trim() === "") {
+        nameInput.classList.add("is-invalid");
+        document.getElementById("name-error").innerHTML = "Please enter your name.";
+        hasError = true;
     } else {
-        fullName.style.outline = 'none';
+        nameInput.classList.remove("is-invalid");
+        document.getElementById("name-error").innerHTML = "";
     }
 
-    if (!email.value.trim()) {
-        email.style.outline = '2px solid red';
+    if (emailInput.value.trim() === "") {
+        emailInput.classList.add("is-invalid");
+        document.getElementById("email-error").innerHTML = "Please enter your email address.";
+        hasError = true;
+    } else if (!/\S+@\S+\.\S+/.test(emailInput.value.trim())) {
+        emailInput.classList.add("is-invalid");
+        document.getElementById("email-error").innerHTML = "Please enter a valid email address.";
+        hasError = true;
     } else {
-        email.style.outline = 'none';
+        emailInput.classList.remove("is-invalid");
+        document.getElementById("email-error").innerHTML = "";
     }
 
-    if (status.value === 'student' || status.value === 'lecturer') {
-        if (!regNumber.value.trim()) {
-            regNumber.style.outline = '2px solid red';
-        } else {
-            regNumber.style.outline = 'none';
-        }
+    if (statusInput.value === "Student" && regNoInput.value.trim() === "") {
+        regNoInput.classList.add("is-invalid");
+        document.getElementById("regNo-error").innerHTML = "Please enter your registration number.";
+        hasError = true;
+    } else if (statusInput.value === "Student" && !/^STD\/\d{2}\/\d{3}$/.test(regNoInput.value.trim())) {
+        regNoInput.classList.add("is-invalid");
+        document.getElementById("regNo-error").innerHTML = "Invalid registration number (ex: STD/20/342)";
+        hasError = true;
+    } else {
+        regNoInput.classList.remove("is-invalid");
+        document.getElementById("regNo-error").innerHTML = "";
     }
 
-    if (fullName.value.trim() && email.value.trim() && faculty.value && status.value && ((status.value === 'student' || status.value === 'lecturer') ? regNumber.value.trim() : true)) {
+    if (messageInput.value.trim() === "") {
+        messageInput.classList.add("is-invalid");
+        document.getElementById("message-error").innerHTML = "Please enter your message.";
+        hasError = true;
+    } else if (messageInput.value.length > 500) {
+        messageInput.classList.add("is-invalid");
+        document.getElementById("message-error").innerHTML = "Message should not exceed 500 characters.";
+        hasError = true;
+    } else {
+        messageInput.classList.remove("is-invalid");
+        document.getElementById("message-error").innerHTML = "";
+    }
+
+    if (!hasError) {
         form.submit();
+        alert("Successfully submitted the form.");
     }
 });

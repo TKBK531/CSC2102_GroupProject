@@ -86,6 +86,7 @@
         </div>
 
         <div class="col-lg-6 side-2">
+
             <form id="contact-form">
 
                 <div class="mb-3">
@@ -95,10 +96,12 @@
                 </div>
 
                 <div class="row">
-                    <div class="col">
+
+                    <div class="col-md-6">
                         <div class="form-group mb-3">
                             <label for="faculty" class="form-label">Faculty</label>
-                            <select class="form-control" id="faculty" name="faculty" required>
+                            <select class="form-control" id="faculty" name="faculty">
+                                <option selected disabled>Select a faculty</option>
                                 <option value="arts">Arts</option>
                                 <option value="business">Business</option>
                                 <option value="education">Education</option>
@@ -111,18 +114,20 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter your email">
                             <div class="invalid-feedback" id="email-error"></div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="mb-3">
                     <label for="status" class="form-label">Status</label>
                     <select class="form-select" id="status" onchange="showRegistrationNumber()">
+                        <option selected disabled>Select your status</option>
                         <option value="lecturer">Lecturer</option>
                         <option value="student">Student</option>
                         <option value="other">Other</option>
@@ -139,12 +144,16 @@
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="5" maxlength="500"></textarea>
+                    <div class="invalid-feedback" id="message-error"></div>
                     <small class="form-text text-muted" id="letter-count">500 characters remaining</small>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
 
             </form>
+
+
         </div>
 
     </div>
