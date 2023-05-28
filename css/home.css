@@ -17,6 +17,21 @@
 
 /* Footer Section */
 
+.header-sectiion{
+
+
+}
+
+.header-title{
+    padding-top: 10px;
+    width: 80%; 
+    height: 300px; 
+    border-radius: 21px 21px 0 0;
+}
+
+.fill-div{
+    height: 350px;
+}
 
 
 .section-2 {

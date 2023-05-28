@@ -66,6 +66,15 @@ form.addEventListener("submit", (event) => {
         document.getElementById("regNo-error").innerHTML = "";
     }
 
+    if (regNoInput.value.trim() === "") {
+        regNoInput.classList.add("is-invalid");
+        document.getElementById("regNo-error").innerHTML = "Please enter your Registration Number.";
+        hasError = true;
+    } else {
+        regNoInput.classList.remove("is-invalid");
+        document.getElementById("regNo-error").innerHTML = "";
+    }
+
     if (messageInput.value.trim() === "") {
         messageInput.classList.add("is-invalid");
         document.getElementById("message-error").innerHTML = "Please enter your message.";
