@@ -1,9 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
-    text-align: center;
-    background-color: #F5F5F5;
-    width: 100vw;
+    /* text-align: center; */
 }
 
 h1,
@@ -27,16 +29,69 @@ p,
 ul {
     font-family: 'Lato', sans-serif;
     font-size: 1.1rem;
+    list-style: none;
 }
 
 nav {
+    height: 80px;
+    width: 100%;
+    text-decoration: none;
     background-color: #003366;
     color: white;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,
+nav ul li a:hover {
+    background: #1b9bff;
+    transition: .5s;
+    color: white;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 25px;
+    cursor: pointer;
 }
 
 section {
     margin: 0;
     padding: 0;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 .heading {
@@ -47,6 +102,7 @@ section {
     color: #003366;
     font-size: 5rem;
     margin: 3rem;
+    text-align: center;
 }
 
 .section-title {
@@ -64,51 +120,13 @@ section {
 }
 
 .header-title {
+    margin: auto;
     padding-top: 10px;
     width: 80%;
     height: 300px;
     border-radius: 21px 21px 0 0;
-}
-
-.nav {
-    width: 100vw;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    transition: background-color 0.5s ease-out;
-}
-
-.navbar-brand:hover {
-    color: #ffd700;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-right: 1rem;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.nav-link {
-    color: white;
-    border-radius: 10px;
-    transition: background-color 0.5s ease-out;
-}
-
-.nav-link:hover {
-    border-radius: 10px;
-    background-color: #ffd700;
-}
-
-.active-nav {
-    color: black;
-    background-color: #FFD700;
+    opacity: 0.9;
+    background-color: #e5e2e2;
 }
 
 /* Footer Section */
@@ -155,4 +173,69 @@ section {
 
 #topBtn:hover {
     background-color: black;
+}
+
+@media(max-width : 981px) {
+    lable.logo {
+        font-size: 30px;
+        padding: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width : 956px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+        z-index: 10;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media(max-width : 1071px){
+    .main-heading{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width : 880px){
+    .main-heading{
+        font-size: 3rem;
+    }
 }

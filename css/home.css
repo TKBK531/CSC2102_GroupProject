@@ -1,7 +1,16 @@
+#about, #services, #events, #alumni, #publications, #footer{
+    text-align: center;
+}
+
 /* Title Section */
 .title-heading {
     font-family: "Alumni Sans", sans-serif;
     font-size: 8rem;
+}
+
+.lead{
+    text-align: center;
+    margin: auto;
 }
 
 .main-img {
@@ -118,11 +127,6 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.header-title{
-    opacity: 0.9;
-    background-color: #e5e2e2;
-}
-
 @media (max-width: 765px) {
     .service-item {
         width: 90%;
@@ -136,7 +140,7 @@
     }
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1071px) {
     .event-card{
         width: 70vw;
         margin: auto;
