@@ -101,7 +101,6 @@
                         <div class="form-group mb-3">
                             <label for="faculty" class="form-label">Faculty</label>
                             <select class="form-control" id="faculty" name="faculty">
-                                <option selected disabled>Select a faculty</option>
                                 <option value="arts">Arts</option>
                                 <option value="business">Business</option>
                                 <option value="education">Education</option>
@@ -141,6 +140,13 @@
                     <div class="invalid-feedback" id="regNo-error"></div>
                 </div>
 
+                <div class="mb-3" id="lec-id" style="display:none;">
+                    <label for="lec-number" class="form-label">Lecturer ID</label>
+                    <input type="text" class="form-control" id="reg-number" placeholder="Enter your ID number">
+                    <div class="invalid-feedback" id="lecNo-error"></div>
+                </div>
+
+
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="5" maxlength="500"></textarea>
@@ -159,8 +165,9 @@
     </div>
 
     <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/contact.js"></script>
 

@@ -2,8 +2,8 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
     text-align: center;
-    letter-spacing: 1px;
     background-color: #F5F5F5;
+    width: 100vw;
 }
 
 h1,
@@ -16,9 +16,9 @@ h6 {
     font-family: "Montserrat", sans-serif;
 }
 
-hr{
-    width : 75% ;
-    display:block;
+hr {
+    width: 75%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -32,6 +32,11 @@ ul {
 nav {
     background-color: #003366;
     color: white;
+}
+
+section {
+    margin: 0;
+    padding: 0;
 }
 
 .heading {
@@ -53,6 +58,21 @@ nav {
     padding: 2rem;
 }
 
+
+.fill-div {
+    height: 350px;
+}
+
+.header-title {
+    padding-top: 10px;
+    width: 80%;
+    height: 300px;
+    border-radius: 21px 21px 0 0;
+}
+
+.nav {
+    width: 100vw;
+}
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -86,7 +106,7 @@ nav {
     background-color: #ffd700;
 }
 
-.active-nav{
+.active-nav {
     color: black;
     background-color: #FFD700;
 }
@@ -96,24 +116,24 @@ nav {
     color: white;
 }
 
-.section-btn{
+.section-btn {
     margin-top: 20px;
     height: 75px;
     width: 400px;
     font-size: 1.2rem;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     border-color: #003366;
     color: #003366;
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     background-color: #003366;
     border-color: #003366;
 }
 
-.section-btn:hover{
+.section-btn:hover {
     background-color: #003366;
 }
 
@@ -131,17 +151,8 @@ nav {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #topBtn:hover {
+}
+
+#topBtn:hover {
     background-color: black;
-  }
-
-
-@media (max-width: 767px) {
-    .navbar-nav .nav-link {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-    }
-
 }

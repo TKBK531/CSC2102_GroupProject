@@ -9,38 +9,13 @@
     margin: 30px
 }
 
-/* Services Section */
-
-/* Events Section */
-
-/* Publications Section */
-
-/* Footer Section */
-
-.header-sectiion{
-
-
-}
-
-.header-title{
-    padding-top: 10px;
-    width: 80%; 
-    height: 300px; 
-    border-radius: 21px 21px 0 0;
-}
-
-.fill-div{
-    height: 350px;
-}
-
-
 .section-2 {
     background-color: #dbd7d79e;
     padding-bottom: 50px;
 }
 
 
-.publication{
+.publication {
     text-decoration: none;
 }
 
@@ -60,17 +35,17 @@
 /* Alumni Section */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: brightness(0%);
+    filter: brightness(0%);
 }
 
-#alumni-carousel .carousel-inner{
+#alumni-carousel .carousel-inner {
     margin: 10px;
     padding: 20px 0 20px 0;
     border: 2px solid #003366;
     border-radius: 10px;
 }
 
-.alum-img{
+.alum-img {
     height: 30rem;
 }
 
@@ -91,7 +66,8 @@
 /* Service Section */
 .progress-container {
     padding: 2rem;
-    margin: 0 16rem 2rem 16rem;
+    width: 90vw;
+    margin: auto;
     border: 3px solid #003366;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
@@ -115,6 +91,7 @@
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 1rem;
+    
 }
 
 .service-item:hover {
@@ -129,6 +106,7 @@
 
 .event-img {
     height: 25rem;
+    overflow: hidden;
 }
 
 .card {
@@ -138,4 +116,30 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-title{
+    opacity: 0.9;
+    background-color: #e5e2e2;
+}
+
+@media (max-width: 765px) {
+    .service-item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .event-card{
+        width: 90vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1340px) {
+    .event-card{
+        width: 70vw;
+        margin: auto;
+        overflow: hidden;
+    }
 }

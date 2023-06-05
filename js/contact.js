@@ -9,6 +9,7 @@ const statusInput = document.getElementById("status");
 const regNoInput = document.getElementById("reg-number");
 const messageInput = document.getElementById("message");
 const submitButton = document.getElementById("submit-button");
+const lecNoInput = document.getElementById("lec-id");
 
 message.addEventListener('input', () => {
     const remainingLetters = maxLetters - message.value.length;
@@ -53,24 +54,16 @@ form.addEventListener("submit", (event) => {
         document.getElementById("email-error").innerHTML = "";
     }
 
-    if (statusInput.value === "Student" && regNoInput.value.trim() === "") {
+    if (regNoInput.value.trim() === "") {
         regNoInput.classList.add("is-invalid");
-        document.getElementById("regNo-error").innerHTML = "Please enter your registration number.";
+        document.getElementById("regNo-error").innerHTML = "Please enter your Registration Number.(ex: STD/20/342)";
         hasError = true;
     } else if (statusInput.value === "Student" && !/^STD\/\d{2}\/\d{3}$/.test(regNoInput.value.trim())) {
         regNoInput.classList.add("is-invalid");
         document.getElementById("regNo-error").innerHTML = "Invalid registration number (ex: STD/20/342)";
         hasError = true;
-    } else {
-        regNoInput.classList.remove("is-invalid");
-        document.getElementById("regNo-error").innerHTML = "";
     }
-
-    if (regNoInput.value.trim() === "") {
-        regNoInput.classList.add("is-invalid");
-        document.getElementById("regNo-error").innerHTML = "Please enter your Registration Number.";
-        hasError = true;
-    } else {
+    else {
         regNoInput.classList.remove("is-invalid");
         document.getElementById("regNo-error").innerHTML = "";
     }

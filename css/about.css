@@ -49,3 +49,29 @@
     background-repeat: no-repeat;
     background-position: -70px;
 }
+
+.div-1, .div-2{
+    height: 100px;
+}
+
+.div-1{
+    background-color: rebeccapurple;
+}
+
+.div-2{
+    background-color: red;
+}
+
+@media (max-width : 992px){
+    .div-1, .div-2{
+        width: 99vh;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width : 746px){
+    .main-heading{
+        font-size: 4rem;
+    }
+}
