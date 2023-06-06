@@ -17,10 +17,10 @@
 
 .bx {
     background-color: transparent;
-    margin: 10px;
+    /* margin: 10px; */
     height: 41vh;
     border-radius: 10px;
-
+    margin: 5px;
 }
 
 .bx1 {
@@ -51,27 +51,33 @@
 }
 
 .div-1, .div-2{
-    height: 100px;
+    height: 9px;
 }
 
-.div-1{
-    background-color: rebeccapurple;
+.s-0{
+    text-align: center;
+    padding-top: 1vw;
 }
 
-.div-2{
-    background-color: red;
+.s-1, .s-2{
+    width: 48vw;
+    display: inline-block;
+}
+.s-1{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-@media (max-width : 992px){
-    .div-1, .div-2{
-        width: 99vh;
-        margin: auto;
-        margin-top: 2rem;
+.s-2{
+    text-align: left;
+}
+
+@media (max-width : 1150px){
+    .s-1, .s-2{
+        display: inline;
     }
-}
 
-@media (max-width : 746px){
-    .main-heading{
-        font-size: 4rem;
+    .s-2{
+        margin-top: 50vh;
     }
 }

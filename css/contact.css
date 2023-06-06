@@ -14,3 +14,8 @@
 .contact-img{
     height: 500px;
 }
+
+.side-1, .side-2{
+    display: inline-block;
+    width: 50vw;
+}

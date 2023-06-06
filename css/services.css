@@ -32,6 +32,10 @@ li{
     color: #003366;
 }
 
+.photo{
+    text-align: center;
+}
+
 @media (max-width: 765px) {
     .serv-item{
         width: 90vw;

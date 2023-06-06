@@ -42,39 +42,45 @@
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">AlumniPortal</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About_us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publications.html">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active-nav" href="alumni.html">Alumni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <label for="main-logo" class="logo">AlumniPortal</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About_us.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="alumni.html" class="active">Alumni</a></li>
+            <li><a href="publications.html">Publications</a></li>
+        </ul>
     </nav>
 
-    <div class="row">
+
+    <!--header-->
+    <section class="title-section section-1" id="title">
+
+        <div class="header-section"
+            style="background-image: url('images/notable-alumni.jpg');background-size: cover;background-repeat: no-repeat;background-position: center;">
+
+            <div class="fill-div">
+
+            </div>
+
+            <div class="header-title">
+                <h2 class="display-5 main-heading">Meet our Notable Alumni</h2>
+                <hr>
+                <p class="lead">Discover the stories behind our successful alumni</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="row alu-row">
         <div class="col-lg-10">
             <form class="form-inline my-2 my-lg-0" action="#" method="get">
                 <div class="row">
@@ -91,16 +97,11 @@
             <a href="join.html"><button class="btn btn-outline-primary">Add your Success</button></a>
         </div>
     </div>
-
-
-    <h1 class="main-heading">Meet our Notable Alumni</h1>
-
     <br>
+    
 
-    <h3 class="class-year">Class of 2010</h3>
-
-    <div class="row">
-
+    <div class="row alu-row">
+        <h3 class="class-year">Class of 2010</h3>
         <div class="alumni-card">
             <div class="alumni-data">
                 <img src="https://qph.cf2.quoracdn.net/main-qimg-45b8bb595ce6673650e1ccafd7fc56e6-lq"
@@ -383,29 +384,31 @@
 
 
     <!-- footer -->
-    <footer class="bg-dark py-3 footer-section" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@alumniportal.com<br>Phone: +1 (123) 456-7890</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Connect With Us</h3>
-                    <ul class="list-unstyled">
-
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="text-center">&copy; 2023 AlumniPortal. All rights reserved.</p>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
-    </footer>
+        <div class="footer-nav">
+            <ul class="footer-nav-links">
+                <li class="footer-nav-link"><a href="home.html">Home</a></li>
+                <li class="footer-nav-link"><a href="About_us.html">About Us</a></li>
+                <li class="footer-nav-link"><a href="services.html">Services</a></li>
+                <li class="footer-nav-link"><a href="events.html">Events</a></li>
+                <li class="footer-nav-link active-footer"><a href="alumni.html">Alumni</a></li>
+                <li class="footer-nav-link"><a href="publications.html">Publications</a></li>
+                <li class="footer-nav-link"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="copywrite">Copywrite &copy;2023 | KM GT TK AB SB SM KJ PP SD</p>
+        </div>
+    </div>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>

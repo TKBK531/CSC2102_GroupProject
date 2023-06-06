@@ -44,10 +44,10 @@ function popImg(link) {
   closeBtn.style.fontSize = "20px";
   closeBtn.style.fontWeight = "bold";
   closeBtn.style.color = "#000";
-  closeBtn.style.backgroundColor = "transparent";
+  closeBtn.style.backgroundColor = "grey";
   closeBtn.style.border = "none";
-  closeBtn.style.borderRadius = "50%";
-  closeBtn.style.padding = "10px";
+  closeBtn.style.borderRadius = "5%";
+  closeBtn.style.padding = "5px";
   closeBtn.style.cursor = "pointer";
   closeBtn.addEventListener("click", function () {
     document.body.removeChild(enlargedImg);
