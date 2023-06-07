@@ -13,20 +13,9 @@ html {
     background-color: #eaf0f2;
 }
 
-/* The footer is fixed to the bottom of the page */
-
 footer {
     bottom: 0;
 }
-
-/* @media (max-height:800px) {
-    footer {
-        position: static;
-    }
-    header {
-        padding-top: 40px;
-    }
-} */
 
 .footer-distributed {
     background-color: #2d2a30;
@@ -44,7 +33,6 @@ footer {
 }
 
 /* Footer left */
-
 .footer-distributed .footer-left {
     width: 30%;
 }

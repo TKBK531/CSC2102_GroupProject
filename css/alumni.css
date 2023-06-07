@@ -45,5 +45,6 @@
 @media (max-width:1050px) {
     .join-form{
         margin: auto;
+        padding-top: 20px;
     }
 }
