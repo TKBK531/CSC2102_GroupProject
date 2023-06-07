@@ -48,10 +48,11 @@
 }
 
 #alumni-carousel .carousel-inner {
-    margin: 10px;
+    margin: auto;
     padding: 20px 0 20px 0;
     border: 2px solid #003366;
     border-radius: 10px;
+    width: 95%;
 }
 
 .alum-img {

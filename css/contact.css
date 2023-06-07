@@ -19,3 +19,7 @@
     display: inline-block;
     width: 50vw;
 }
+
+.contact-form-container .form-item-container{
+    padding-left: 0px;
+}

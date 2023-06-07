@@ -27,13 +27,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- 
-    font-family: 'Lato', sans-serif;
-    font-family: 'Merriweather', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    -->
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="icon" type="images/x-icon" href="/images/favicon.ico">
@@ -42,7 +35,6 @@
 </head>
 
 <body>
-
 
     <!-- Nav Bar -->
     <nav>
@@ -63,117 +55,121 @@
         </ul>
     </nav>
 
+    <section class="title-section section-1" id="title">
+        <div class="header-section"
+            style="background-image: url('images/contact-us.jpg');background-size: cover;background-repeat: no-repeat;background-position: center;">
 
+            <div class="fill-div">
 
-    <div>
+            </div>
 
-        <h1 class="main-heading">Contact Form</h1>
-        <div class="col-lg-6 side-1">
-            <img src="images/dog.png" class="contact-img" alt="">
+            <div class="header-title">
+                <h2 class="display-5 main-heading">Contact Us</h2>
+                <hr>
+                <p class="lead">Feel free to reach out to us with any inquiries or feedback.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="col-lg-6 side-2">
+    <div class="contact-from-container">
+        <form id="contact-form">
 
-            <form id="contact-form">
-
-                <div class="mb-3">
-                    <label for="full-name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="full-name" placeholder="Enter your full name">
-                    <div class="invalid-feedback" id="name-error"></div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="form-group mb-3">
-                            <label for="faculty" class="form-label">Faculty</label>
-                            <select class="form-control" id="faculty" name="faculty">
-                                <option value="arts">Arts</option>
-                                <option value="business">Business</option>
-                                <option value="education">Education</option>
-                                <option value="engineering">Engineering</option>
-                                <option value="law">Law</option>
-                                <option value="medicine">Medicine</option>
-                                <option value="science">Science</option>
-                                <option value="social-sciences">Social Sciences</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+            <div class="mb-3 form-full-name-container form-item-container">
+                <label for="full-name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="full-name" placeholder="Enter your full name">
+                <div class="invalid-feedback" id="name-error"></div>
+            </div>
+    
+            <div class="row">
+    
+                <div class="col-md-6 form-item-container faculty-container">
+                    <div class="form-group mb-3">
+                        <label for="faculty" class="form-label">Faculty</label>
+                        <select class="form-control" id="faculty" name="faculty">
+                            <option value="arts">Arts</option>
+                            <option value="business">Business</option>
+                            <option value="education">Education</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="law">Law</option>
+                            <option value="medicine">Medicine</option>
+                            <option value="science">Science</option>
+                            <option value="social-sciences">Social Sciences</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                            <div class="invalid-feedback" id="email-error"></div>
-                        </div>
+                </div>
+
+                <div class="col-md-6 form-item-container email-container">
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <div class="invalid-feedback" id="email-error"></div>
                     </div>
-
                 </div>
-
-                <div class="mb-3">
-                    <label for="status" class="form-label">Status</label>
-                    <select class="form-select" id="status" onchange="showRegistrationNumber()">
-                        <option selected disabled>Select your status</option>
-                        <option value="lecturer">Lecturer</option>
-                        <option value="student">Student</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="mb-3" id="registration-number" style="display:none;">
-                    <label for="reg-number" class="form-label">Registration Number</label>
-                    <input type="text" class="form-control" id="reg-number"
-                        placeholder="Enter your registration number">
-                    <div class="invalid-feedback" id="regNo-error"></div>
-                </div>
-
-                <div class="mb-3" id="lec-id" style="display:none;">
-                    <label for="lec-number" class="form-label">Lecturer ID</label>
-                    <input type="text" class="form-control" id="reg-number" placeholder="Enter your ID number">
-                    <div class="invalid-feedback" id="lecNo-error"></div>
-                </div>
-
-
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" maxlength="500"></textarea>
-                    <div class="invalid-feedback" id="message-error"></div>
-                    <small class="form-text text-muted" id="letter-count">500 characters remaining</small>
-                </div>
-
-
-                <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
-
-            </form>
-
-
-        </div>
-
+    
+            </div>
+    
+            <div class="mb-3 form-status-container form-item-container">
+                <label for="status" class="form-label">Status</label>
+                <select class="form-select" id="status" onchange="showRegistrationNumber()">
+                    <!-- <option selected disabled>Select your status</option> -->
+                    <option value="lecturer">Lecturer</option>
+                    <option value="student">Student</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="mb-3 form-reg-no-container form-item-container" id="registration-number" style="display:none;">
+                <label for="reg-number" class="form-label">Registration Number</label>
+                <input type="text" class="form-control" id="reg-number"
+                    placeholder="Enter your registration number">
+                <div class="invalid-feedback" id="regNo-error"></div>
+            </div>
+    
+            <div class="mb-3  form-lecturer-id-container form-item-container" id="lec-id" style="display:none;">
+                <label for="lec-number" class="form-label">Lecturer ID</label>
+                <input type="text" class="form-control" id="reg-number" placeholder="Enter your ID number">
+                <div class="invalid-feedback" id="lecNo-error"></div>
+            </div>
+    
+    
+            <div class="mb-3 form-message-container form-item-container">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" maxlength="500"></textarea>
+                <div class="invalid-feedback" id="message-error"></div>
+                <small class="form-text text-muted" id="letter-count">500 characters remaining</small>
+            </div>
+    
+    
+            <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
+    
+        </form>
     </div>
+    
 
-        <!-- footer -->
-        <div class="footer-container">
-            <div class="social-icons">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="footer-nav">
-                <ul class="footer-nav-links">
-                    <li class="footer-nav-link"><a href="home.html">Home</a></li>
-                    <li class="footer-nav-link"><a href="About_us.html">About Us</a></li>
-                    <li class="footer-nav-link"><a href="services.html">Services</a></li>
-                    <li class="footer-nav-link"><a href="events.html">Events</a></li>
-                    <li class="footer-nav-link"><a href="alumni.html">Alumni</a></li>
-                    <li class="footer-nav-link"><a href="publications.html">Publications</a></li>
-                    <li class="footer-nav-link active-footer"><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p class="copywrite">Copywrite &copy;2023 | KM GT TK AB SB SM KJ PP SD</p>
-            </div>
+    <!-- footer -->
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
+        <div class="footer-nav">
+            <ul class="footer-nav-links">
+                <li class="footer-nav-link"><a href="home.html">Home</a></li>
+                <li class="footer-nav-link"><a href="About_us.html">About Us</a></li>
+                <li class="footer-nav-link"><a href="services.html">Services</a></li>
+                <li class="footer-nav-link"><a href="events.html">Events</a></li>
+                <li class="footer-nav-link"><a href="alumni.html">Alumni</a></li>
+                <li class="footer-nav-link"><a href="publications.html">Publications</a></li>
+                <li class="footer-nav-link active-footer"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="copywrite">Copywrite &copy;2023 | KM GT TK AB SB SM KJ PP SD</p>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -185,6 +181,7 @@
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

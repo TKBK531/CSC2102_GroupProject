@@ -1,0 +1,51 @@
+.services{
+    text-align: center;
+}
+
+.services .service{
+    display: inline-block;
+    margin: 30px;
+    width: 35vw;
+    border: 2px #223c7e solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.services .service:hover{
+    color: #003366;
+    border: 2px solid #003366;
+    transition: .5s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+}
+
+.services .service-type{
+    text-align: center;
+}
+
+.services .service ul li{
+    line-height: 2;
+    text-align: left;
+}
+
+.services .service .service-icon{
+    font-size: 50px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .services .service{
+        display: inline-block;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .services .service ul{
+        list-style: inside;
+    }
+}
+
+@media (max-width: 956px){
+    .services .service{
+        height: 50vh;
+    }
+}
