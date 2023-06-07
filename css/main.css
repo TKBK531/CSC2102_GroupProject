@@ -31,6 +31,10 @@ ul {
     list-style: none;
 }
 
+.footer .container .row .footer-col ul{
+    padding-left: 0;
+}
+/* 
 nav {
     position: fixed;
     height: 80px;
@@ -68,13 +72,17 @@ nav ul li a:hover {
     color: white;
 }
 
-label.logo {
+nav label.logo {
     color: white;
     font-size: 35px;
     line-height: 80px;
     padding: 0 25px;
     cursor: pointer;
 }
+
+nav.logo{
+    font: normal 36px 'Cookie', cursive;
+} */
 
 section {
     margin: 0;
@@ -88,7 +96,7 @@ section {
 .lead{
     text-align: center;
 }
-
+/* 
 .checkbtn {
     font-size: 30px;
     color: white;
@@ -101,7 +109,7 @@ section {
 
 #check {
     display: none;
-}
+} */
 
 .heading {
     margin: 0 auto 0 auto;
@@ -139,10 +147,10 @@ section {
     background-color: #e5e2e2;
 }
 
-/* Footer Section */
+/* Footer Section
 .footer-section {
     color: white;
-}
+}  */
 
 .section-btn {
     margin-top: 20px;
@@ -184,6 +192,7 @@ section {
     background-color: black;
 }
 
+/* 
 .footer-container{
     padding: 40px 0;
     background-color: black;
@@ -246,7 +255,7 @@ section {
     margin-bottom: 0;
     opacity: .5;
     font-size: 10px;
-}
+} */
 
 @media(max-width : 880px) {
     .main-heading {
@@ -255,7 +264,7 @@ section {
 }
 
 @media(max-width : 956px) {
-    .checkbtn {
+    /* .checkbtn {
         display: block;
     }
 
@@ -263,7 +272,7 @@ section {
         position: fixed;
         z-index: 100;
     }
-
+*/
     ul {
         position: fixed;
         width: 100%;
@@ -274,7 +283,7 @@ section {
         text-align: center;
         transition: all .5s;
     }
-
+/*
     nav ul li {
         display: block;
         margin: 50px 0;
@@ -293,16 +302,16 @@ section {
 
     #check:checked~ul {
         left: 0;
-    }
+    } */
 }
 
 @media(max-width : 997px) {
-    nav ul li{
+    /* nav ul li{
         margin: 0;
     }
     nav ul li a {
         font-size: 16px;
-    }
+    } */
 }
 
 

@@ -12,6 +12,8 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/alumni.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Open+Sans&display=swap"
         rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
 
     <!-- Font Awesome -->
@@ -52,66 +55,90 @@
         </ul>
     </nav>
 
-    <div class="row">
-        <div>
-            <div class="container join-form">
-                <h1 class="main-heading">Add Your Success</h1>
-                <form id="alumni-form" class="container mt-3 needs-validation" novalidate>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                        <div class="invalid-feedback" id="name-error"></div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="picture" class="form-label">Picture</label>
-                        <input type="file" class="form-control" id="picture" name="picture" required>
-                        <div class="invalid-feedback" id="picture-error"></div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="class_year" class="form-label">Class Year</label>
-                        <input type="text" class="form-control" id="year" name="class_year" required>
-                        <div class="invalid-feedback" id="year-error"></div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="alumni_code" class="form-label">Alumni Code</label>
-                        <input type="text" class="form-control" id="code" name="alumni_code" required>
-                        <div class="invalid-feedback" id="code-error"></div>
-                    </div>
-                    <button type="submit" id="submit-button" class="btn btn-outline-primary add-btn">Add</button>
-                </form>
+    <!-- Join Form -->
+    <div class="container join-form">
+        <h1 class="main-heading">Add your Details</h1>
+        <form id="alumni-form" class="container mt-3 needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <div class="invalid-feedback" id="name-error"></div>
+            </div>
+            <div class="mb-3">
+                <label for="picture" class="form-label">Picture</label>
+                <input type="file" class="form-control" id="picture" name="picture" required>
+                <div class="invalid-feedback" id="picture-error"></div>
+            </div>
+            <div class="mb-3">
+                <label for="class_year" class="form-label">Class Year</label>
+                <input type="text" class="form-control" id="year" name="class_year" required>
+                <div class="invalid-feedback" id="year-error"></div>
+            </div>
+            <div class="mb-3">
+                <label for="alumni_code" class="form-label">Alumni Code</label>
+                <input type="text" class="form-control" id="code" name="alumni_code" required>
+                <div class="invalid-feedback" id="code-error"></div>
+            </div>
+            <button type="submit" id="submit-button" class="btn btn-outline-primary add-btn">Add</button>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Alumni<span>Portal</span></h3>
+
+            <p class="footer-links">
+                <a href="home.html">Home</a>
+                |
+                <a href="About_us.html">About</a>
+                |
+                <a href="alumni.html">Alumni</a>
+                |
+                <a href="publications.html">Publications</a>
+                |
+                <a href="contact.html">Contact</a>
+                |
+                <a href="events.html">Events</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2023 <strong>AlumniPortal</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Sri Lanka</span>
+                    Colombo</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+94 74**9**258</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:alumni.portal@alu.ac.lk">alumni.portal@alu.ac.lk</a></p>
             </div>
         </div>
-        <div class="col-lg-1">
-
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Website</span>
+                <strong>AlumniPortal</strong> is a website where you can find and meet Alumni.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
-    </div>
+    </footer>
 
-  <!-- footer -->
-  <div class="footer-container">
-    <div class="social-icons">
-      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    <div class="footer-nav">
-      <ul class="footer-nav-links">
-        <li class="footer-nav-link"><a href="home.html">Home</a></li>
-        <li class="footer-nav-link"><a href="About_us.html">About Us</a></li>
-        <li class="footer-nav-link"><a href="services.html">Services</a></li>
-        <li class="footer-nav-link"><a href="events.html">Events</a></li>
-        <li class="footer-nav-link active-footer"><a href="alumni.html">Alumni</a></li>
-        <li class="footer-nav-link"><a href="publications.html">Publications</a></li>
-        <li class="footer-nav-link"><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <p class="copywrite">Copywrite &copy;2023 | KM GT TK AB SB SM KJ PP SD</p>
-    </div>
-  </div>
-
+    <!-- Go to top Button -->
     <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
-    
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -120,6 +147,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/alumni.js"></script>
-
 </body>
+
 </html>
